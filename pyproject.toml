@@ -1,0 +1,12 @@
+[project]
+name = "adk-taller"
+version = "0.1.0"
+description = "Taller de 3hrs — Desarrollo de Agentes con Google ADK"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk",
+]
+
+[tool.uv]
+python-preference = "managed"
