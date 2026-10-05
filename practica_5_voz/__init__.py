@@ -1,5 +1,5 @@
 ﻿"""
-PrÃ¡ctica 4: Agentes de Voz.
+Práctica 4: Agentes de Voz.
 Expone el root_agent del paquete.
 """
 

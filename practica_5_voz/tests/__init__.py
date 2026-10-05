@@ -1,1 +1,1 @@
-﻿"""Tests para la prÃ¡ctica de voz."""
+﻿"""Tests para la práctica de voz."""

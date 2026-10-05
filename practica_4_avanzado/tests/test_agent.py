@@ -1,8 +1,8 @@
-﻿import pytest
+import pytest
 from practica_4_avanzado.agent import root_agent
 
 def test_agente_configuracion_avanzada():
-    """Verifica que el agente tenga la configuraciÃ³n avanzada asignada correctamente."""
+    """Verifica que el agente tenga la configuración avanzada asignada correctamente."""
     # Verificar modelo
     assert root_agent.model == "gemini-3.8-flash"
     

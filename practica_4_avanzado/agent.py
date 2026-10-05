@@ -1,12 +1,12 @@
-﻿from google.adk.agents import Agent
+from google.adk.agents import Agent
 from google.genai import types
 
 from .prompts.instrucciones import PROMPT_AVANZADO
 
-# Definimos la configuraciÃ³n de generaciÃ³n usando los tipos de google.genai
-# AquÃ­ es donde controlamos los parÃ¡metros avanzados del modelo
+# Definimos la configuración de generación usando los tipos de google.genai
+# Aquí es donde controlamos los parámetros avanzados del modelo
 config_avanzada = types.GenerateContentConfig(
-    # Controla la creatividad (0.0 = robÃ³tico/estricto, 2.0 = muy creativo/alucinaciÃ³n)
+    # Controla la creatividad (0.0 = robótico/estricto, 2.0 = muy creativo/alucinación)
     temperature=0.1,
     
     # Limita la cantidad de texto que puede devolver (para ahorrar costos)
