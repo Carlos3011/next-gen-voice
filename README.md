@@ -19,14 +19,19 @@ Eso es todo. El script instala automáticamente:
 - ✅ Python 3.12
 - ✅ `google-adk` (dependencia única)
 
-## 🔑 Configurar API Key (gratis)
+## 🔑 Configurar API Key (Gratis)
 
-1. Ir a [aistudio.google.com](https://aistudio.google.com)
-2. Click en **"Get API Key"**
-3. Copiar la key y pegarla en el archivo `.env`:
+Para usar los modelos de Gemini sin costo, necesitamos una clave de Google AI Studio. **Sigue estos pasos exactamente para evitar errores de permisos:**
+
+1. Entra a **[https://aistudio.google.com/](https://aistudio.google.com/)** e inicia sesión con tu cuenta de Google.
+2. En el menú, busca la sección **"Get API key"** (o ve directo a [este enlace](https://aistudio.google.com/app/apikey)).
+3. Haz clic en el botón **"Create API key"**.
+4. ⚠️ **MUY IMPORTANTE:** En el menú que aparece, selecciona la opción **"Create API key in new project"** (Crear en un proyecto nuevo). *Si eliges un proyecto existente viejo, Google podría bloquear la conexión.*
+5. Copia la clave generada (empieza con `AIzaSy...`).
+6. En tu código, abre el archivo `.env` y pega tu clave para que quede así:
 
 ```env
-GOOGLE_API_KEY=AIzaSy...
+GOOGLE_API_KEY=AIzaSyTuClaveAqui...
 ```
 
 ## 🚀 Correr las prácticas
