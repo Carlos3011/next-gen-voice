@@ -8,19 +8,23 @@ def obtener_clima(ciudad: str) -> str:
     Usa esta herramienta cuando el usuario pregunte por el clima de un lugar.
     
     Args:
-        ciudad (str): El nombre de la ciudad para la cual consultar el clima (ej. 'Madrid', 'Bogotá').
+        ciudad (str): El nombre de la ciudad para la cual consultar el clima (ej. 'Puebla', 'CDMX', 'Cholula').
         
     Returns:
         str: Una descripción simulada del clima en esa ciudad.
     """
-    # En un caso real, aquí haríamos una petición HTTP (request) a una API de clima (como OpenWeather).
-    # Para fines de esta práctica, simularemos la respuesta.
-    
+    # Simulamos una respuesta de API enfocada en México/Puebla
     ciudad_limpia = ciudad.strip().lower()
     
-    if ciudad_limpia == "madrid":
-        return f"El clima en {ciudad} es soleado, con 25°C."
-    elif ciudad_limpia == "bogotá" or ciudad_limpia == "bogota":
-        return f"El clima en {ciudad} es lluvioso, con 15°C."
+    if ciudad_limpia == "puebla":
+        return f"El clima en {ciudad} es mayormente soleado, con 22°C y excelente vista a los volcanes."
+    elif ciudad_limpia == "cholula":
+        return f"El clima en {ciudad} es despejado, con 24°C y viento ligero."
+    elif ciudad_limpia == "atlixco":
+        return f"El clima en {ciudad} es caluroso, con 28°C ideal para comer un helado o cecina."
+    elif ciudad_limpia == "cdmx" or ciudad_limpia == "ciudad de mexico":
+        return f"El clima en {ciudad} es nublado con probabilidad de lluvia por la tarde, 19°C."
+    elif ciudad_limpia == "monterrey":
+        return f"El clima en {ciudad} es extremadamente caluroso, 35°C, ponte bloqueador."
     else:
-        return f"El clima en {ciudad} es templado, con 20°C y parcialmente nublado."
+        return f"No tengo datos precisos para {ciudad}, pero asume un clima templado estándar de 20°C."

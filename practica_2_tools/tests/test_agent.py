@@ -11,12 +11,12 @@ def test_agente_tiene_herramientas():
 
 def test_funcion_obtener_clima():
     # Probamos la lógica interna de nuestra herramienta de Python
-    resultado_madrid = obtener_clima("Madrid")
-    assert "soleado" in resultado_madrid
-    assert "25" in resultado_madrid
+    resultado_puebla = obtener_clima("Puebla")
+    assert "soleado" in resultado_puebla
+    assert "22" in resultado_puebla
     
-    resultado_bogota = obtener_clima("Bogotá")
-    assert "lluvioso" in resultado_bogota
+    resultado_cdmx = obtener_clima("CDMX")
+    assert "lluvia" in resultado_cdmx
     
     resultado_otro = obtener_clima("Tokyo")
     assert "templado" in resultado_otro
