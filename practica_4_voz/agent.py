@@ -1,4 +1,4 @@
-﻿"""DefiniciÃ³n del agente de voz."""
+"""DefiniciÃ³n del agente de voz."""
 
 from google.adk.agents import Agent
 from .prompts.instrucciones import PROMPT_VOZ

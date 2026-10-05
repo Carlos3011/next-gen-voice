@@ -1,4 +1,4 @@
-﻿"""
+"""
 Pruebas unitarias para verificar la estructura del workflow multi-agente.
 """
 from google.adk.agents import SequentialAgent
@@ -15,5 +15,5 @@ def test_workflow_structure():
     assert root_agent.sub_agents[0].name == "Investigador", "El primer agente debe llamarse 'Investigador'"
     assert root_agent.sub_agents[1].name == "Redactor", "El segundo agente debe llamarse 'Redactor'"
 
-    # 4. Verificar la configuraciÃ³n del estado de sesiÃ³n compartido
+    # 4. Verificar la configuración del estado de sesión compartido
     assert root_agent.sub_agents[0].output_key == "datos_investigados", "El investigador debe exportar su salida a 'datos_investigados'"

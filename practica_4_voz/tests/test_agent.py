@@ -1,4 +1,4 @@
-﻿"""Pruebas para verificar la configuraciÃ³n del agente de voz."""
+"""Pruebas para verificar la configuración del agente de voz."""
 
 from ..agent import root_agent
 
@@ -15,4 +15,4 @@ def test_agente_usa_modelo_live():
 def test_agente_tiene_instrucciones():
     """Verifica que el agente tenga las instrucciones de voz configuradas correctamente."""
     assert root_agent.instruction is not None
-    assert "llamada telefÃ³nica" in root_agent.instruction.lower()
+    assert "llamada telefónica" in root_agent.instruction.lower()

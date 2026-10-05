@@ -1,5 +1,5 @@
-﻿# Este archivo indica que el directorio "prompts" es un paquete de Python.
-# AquÃ­ importamos el prompt para que sea fÃ¡cil de acceder desde fuera.
+# Este archivo indica que el directorio "prompts" es un paquete de Python.
+# Aquí importamos el prompt para que sea fácil de acceder desde fuera.
 
 from .instrucciones import PROMPT_TOOLS
 

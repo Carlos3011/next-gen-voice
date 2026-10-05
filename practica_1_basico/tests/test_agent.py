@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 import os
 import pytest
 
@@ -10,15 +10,15 @@ from practica_1_basico.agent import root_agent
 
 def test_root_agent_configuracion():
     """
-    Prueba unitaria didÃ¡ctica para verificar que nuestro agente estÃ¡
+    Prueba unitaria didáctica para verificar que nuestro agente está
     configurado correctamente antes de usarlo.
     """
     # 1. Comprobamos que el nombre es correcto
-    assert root_agent.name == "asistente_amable", "El nombre del agente deberÃ­a ser 'asistente_amable'"
+    assert root_agent.name == "asistente_amable", "El nombre del agente debería ser 'asistente_amable'"
     
-    # 2. Comprobamos que usa el modelo correcto (gemini-3.8-flash es rÃ¡pido y eficiente)
+    # 2. Comprobamos que usa el modelo correcto (gemini-3.8-flash es rápido y eficiente)
     assert root_agent.model == "gemini-3.8-flash", "El modelo configurado no es el esperado"
     
-    # 3. Comprobamos que, al ser bÃ¡sico, no tiene herramientas (tools)
-    # Puede ser None o una lista vacÃ­a
-    assert not root_agent.tools, "El agente de la prÃ¡ctica bÃ¡sica no deberÃ­a tener herramientas"
+    # 3. Comprobamos que, al ser básico, no tiene herramientas (tools)
+    # Puede ser None o una lista vacía
+    assert not root_agent.tools, "El agente de la práctica básica no debería tener herramientas"
